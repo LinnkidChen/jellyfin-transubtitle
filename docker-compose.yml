@@ -8,6 +8,7 @@ services:
         - ALPINE_MIRROR=${ALPINE_MIRROR}
         - PYPI_MIRROR=${PYPI_MIRROR}
     container_name: jellyfin-transubtitle
+    image: hsojo/jellyfin-transubtitle
     restart: unless-stopped
     tty: true
     environment:
